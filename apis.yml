@@ -1,0 +1,71 @@
+name: Spring Batch
+description: A lightweight, comprehensive batch framework designed to enable the development of robust batch applications vital for the daily operations of enterprise systems
+image: https://spring.io/img/projects/spring-batch.svg
+created: 2024-01-15 00:00:00+00:00
+modified: 2024-01-15 00:00:00+00:00
+specificationVersion: '0.18'
+url: https://spring.io/projects/spring-batch
+tags:
+- Batch Processing
+- Java
+- Spring Framework
+- Enterprise
+- Job Scheduling
+- ETL
+- Data Processing
+apis:
+- name: Spring Batch Core API
+  description: Core framework API for batch processing including job configuration, execution, and monitoring
+  image: https://spring.io/img/projects/spring-batch.svg
+  humanURL: https://spring.io/projects/spring-batch
+  baseURL: https://github.com/spring-projects/spring-batch
+  tags:
+  - Batch Jobs
+  - Job Repository
+  - Step Execution
+  - Chunk Processing
+  properties:
+  - type: Documentation
+    url: https://docs.spring.io/spring-batch/docs/current/reference/html/
+  - type: API Documentation
+    url: https://docs.spring.io/spring-batch/docs/current/api/
+  - type: OpenAPI
+    url: https://github.com/spring-projects/spring-batch/blob/main/spring-batch-docs/modules/ROOT/pages/index.adoc
+  - type: GitHub Repository
+    url: https://github.com/spring-projects/spring-batch
+  - type: Getting Started Guide
+    url: https://spring.io/guides/gs/batch-processing/
+  - type: Reference Guide
+    url: https://docs.spring.io/spring-batch/docs/current/reference/html/index-single.html
+  - type: Samples
+    url: https://github.com/spring-projects/spring-batch/tree/main/spring-batch-samples
+maintainers:
+- name: Spring Team
+  email: spring-batch@pivotal.io
+  url: https://spring.io/team
+include:
+- name: Spring Framework
+  url: https://spring.io/projects/spring-framework
+- name: Spring Boot
+  url: https://spring.io/projects/spring-boot
+common:
+- type: Blog
+  url: https://spring.io/blog/category/spring-batch
+- type: Stack Overflow
+  url: https://stackoverflow.com/questions/tagged/spring-batch
+- type: Chat
+  url: https://gitter.im/spring-projects/spring-batch
+- type: Issues
+  url: https://github.com/spring-projects/spring-batch/issues
+- type: Roadmap
+  url: https://github.com/spring-projects/spring-batch/milestones
+- type: License
+  url: https://github.com/spring-projects/spring-batch/blob/main/LICENSE
+- type: Contributing Guidelines
+  url: https://github.com/spring-projects/spring-batch/blob/main/CONTRIBUTING.md
+- type: Maven Central
+  url: https://search.maven.org/search?q=g:org.springframework.batch
+- type: Release Notes
+  url: https://github.com/spring-projects/spring-batch/releases
+- type: Security Policy
+  url: https://github.com/spring-projects/spring-batch/security/policy
