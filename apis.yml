@@ -2,7 +2,7 @@ name: Spring Batch
 description: A lightweight, comprehensive batch framework designed to enable the development of robust batch applications vital for the daily operations of enterprise systems
 image: https://spring.io/img/projects/spring-batch.svg
 created: 2024-01-15 00:00:00+00:00
-modified: 2024-01-15 00:00:00+00:00
+modified: '2026-03-16'
 specificationVersion: '0.18'
 url: https://spring.io/projects/spring-batch
 tags:
