@@ -9,12 +9,12 @@ specificationVersion: '0.18'
 url: https://spring.io/projects/spring-batch
 tags:
   - Batch Processing
-  - Java
-  - Spring Framework
-  - Enterprise
-  - Job Scheduling
-  - ETL
   - Data Processing
+  - Enterprise
+  - ETL
+  - Java
+  - Job Scheduling
+  - Spring Framework
 apis:
   - name: Spring Batch Core API
     description: >-
@@ -25,27 +25,24 @@ apis:
     baseURL: https://github.com/spring-projects/spring-batch
     tags:
       - Batch Jobs
+      - Chunk Processing
       - Job Repository
       - Step Execution
-      - Chunk Processing
     properties:
       - type: Documentation
         url: https://docs.spring.io/spring-batch/docs/current/reference/html/
       - type: API Documentation
         url: https://docs.spring.io/spring-batch/docs/current/api/
       - type: OpenAPI
-        url: 
-          https://github.com/spring-projects/spring-batch/blob/main/spring-batch-docs/modules/ROOT/pages/index.adoc
+        url: https://github.com/spring-projects/spring-batch/blob/main/spring-batch-docs/modules/ROOT/pages/index.adoc
       - type: GitHub Repository
         url: https://github.com/spring-projects/spring-batch
       - type: Getting Started Guide
         url: https://spring.io/guides/gs/batch-processing/
       - type: Reference Guide
-        url: 
-          https://docs.spring.io/spring-batch/docs/current/reference/html/index-single.html
+        url: https://docs.spring.io/spring-batch/docs/current/reference/html/index-single.html
       - type: Samples
-        url: 
-          https://github.com/spring-projects/spring-batch/tree/main/spring-batch-samples
+        url: https://github.com/spring-projects/spring-batch/tree/main/spring-batch-samples
 maintainers:
   - name: Spring Team
     email: spring-batch@pivotal.io
@@ -69,8 +66,7 @@ common:
   - type: License
     url: https://github.com/spring-projects/spring-batch/blob/main/LICENSE
   - type: Contributing Guidelines
-    url: 
-      https://github.com/spring-projects/spring-batch/blob/main/CONTRIBUTING.md
+    url: https://github.com/spring-projects/spring-batch/blob/main/CONTRIBUTING.md
   - type: Maven Central
     url: https://search.maven.org/search?q=g:org.springframework.batch
   - type: Release Notes
