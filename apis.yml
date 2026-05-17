@@ -11,7 +11,7 @@ created: 2024-01-15 00:00:00+00:00
 modified: '2026-05-02'
 specificationVersion: '0.18'
 url: https://spring.io/projects/spring-batch
-type: opensource
+kind: opensource
 tags:
   - Batch Processing
   - Data Processing
@@ -39,7 +39,7 @@ apis:
         url: https://docs.spring.io/spring-batch/docs/current/reference/html/
       - type: API Documentation
         url: https://docs.spring.io/spring-batch/docs/current/api/
-      - type: GitHub Repository
+      - type: GitHubRepository
         url: https://github.com/spring-projects/spring-batch
       - type: Getting Started Guide
         url: https://spring.io/guides/gs/batch-processing/
@@ -94,13 +94,13 @@ include:
 common:
   - type: Blog
     url: https://spring.io/blog/category/spring-batch
-  - type: Stack Overflow
+  - type: StackOverflow
     url: https://stackoverflow.com/questions/tagged/spring-batch
   - type: Chat
     url: https://gitter.im/spring-projects/spring-batch
   - type: Issues
     url: https://github.com/spring-projects/spring-batch/issues
-  - type: Roadmap
+  - type: RoadMap
     url: https://github.com/spring-projects/spring-batch/milestones
   - type: License
     url: https://github.com/spring-projects/spring-batch/blob/main/LICENSE
@@ -108,7 +108,7 @@ common:
     url: https://github.com/spring-projects/spring-batch/blob/main/CONTRIBUTING.md
   - type: Maven Central
     url: https://search.maven.org/search?q=g:org.springframework.batch
-  - type: Release Notes
+  - type: ReleaseNotes
     url: https://github.com/spring-projects/spring-batch/releases
   - type: Security Policy
     url: https://github.com/spring-projects/spring-batch/security/policy
