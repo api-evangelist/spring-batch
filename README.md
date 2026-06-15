@@ -1,94 +1,93 @@
-# Spring Batch
+# Spring Batch (spring-batch)
 
-A lightweight, comprehensive batch framework designed to enable the development of robust batch applications vital for the daily operations of enterprise systems. Spring Batch provides reusable functions for processing large volumes of records including logging/tracing, transaction management, job processing statistics, job restart, skip, and resource management.
+A lightweight, comprehensive batch framework designed to enable the development of robust batch applications vital for the daily operations of enterprise systems. Spring Batch provides reusable functions for processing large volumes of records including logging/tracing, transaction management, job processing statistics, job restart, skip, and resource management. It supports reading and writing from flat files, XML, JSON, databases (JDBC, JPA, Hibernate), message queues, and more.
 
-- **URL:** https://spring.io/projects/spring-batch
-- **Type:** Open Source
-- **Tags:** Batch Processing, Data Processing, Enterprise, ETL, Java, Job Scheduling, Spring Framework
+**APIs.json:** [https://spring.io/projects/spring-batch](https://spring.io/projects/spring-batch)
+
+## Tags
+
+- Batch Processing
+- Data Processing
+- Enterprise
+- ETL
+- Java
+- Job Scheduling
+- Spring Framework
+
+## Timestamps
+
+- **Created:** Sun Jan 14 2024 19:00:00 GMT-0500 (Eastern Standard Time)
+- **Modified:** 2026-05-19
 
 ## APIs
 
 ### Spring Batch Core API
 
-Core framework API for batch processing including job configuration, execution, step management, job repository, and monitoring.
+Core framework API for batch processing including job configuration, execution, step management, job repository, and monitoring. Includes support for chunk-oriented processing with configurable readers, processors, and writers.
+
+- **Human URL:** [https://spring.io/projects/spring-batch](https://spring.io/projects/spring-batch)
+- **Base URL:** `https://github.com/spring-projects/spring-batch`
+
+#### Tags
+
+- Batch Jobs
+- Chunk Processing
+- Job Repository
+- Step Execution
+
+#### Properties
 
 - [Documentation](https://docs.spring.io/spring-batch/docs/current/reference/html/)
-- [API Documentation](https://docs.spring.io/spring-batch/docs/current/api/)
+- [A P I  Documentation](https://docs.spring.io/spring-batch/docs/current/api/)
 - [GitHub Repository](https://github.com/spring-projects/spring-batch)
-- [Getting Started Guide](https://spring.io/guides/gs/batch-processing/)
-- [Reference Guide](https://docs.spring.io/spring-batch/docs/current/reference/html/index-single.html)
+- [Getting  Started  Guide](https://spring.io/guides/gs/batch-processing/)
+- [Reference  Guide](https://docs.spring.io/spring-batch/docs/current/reference/html/index-single.html)
 - [Samples](https://github.com/spring-projects/spring-batch/tree/main/spring-batch-samples)
+- [OpenAPI](openapi/spring-batch-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
+- [Postman Collection](collections/spring-batch.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/spring-batch.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+- [Spectral  Rules](rules/spring-batch-rules.yml)
 
 ### Spring Batch Actuator API
 
-Spring Boot Actuator-based REST endpoints for monitoring Spring Batch applications.
+Spring Boot Actuator-based REST endpoints for monitoring Spring Batch applications. Provides health indicators, Micrometer metrics, and job execution visibility.
+
+- **Human URL:** [https://docs.spring.io/spring-batch/docs/current/reference/html/monitoring-and-metrics.html](https://docs.spring.io/spring-batch/docs/current/reference/html/monitoring-and-metrics.html)
+- **Base URL:** `http://localhost:8080/actuator`
+
+#### Tags
+
+- Actuator
+- Health
+- Metrics
+- Monitoring
+
+#### Properties
 
 - [Documentation](https://docs.spring.io/spring-batch/docs/current/reference/html/monitoring-and-metrics.html)
+- [Postman Collection](collections/spring-batch.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/spring-batch.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
 ### Spring Batch Infrastructure API
 
-ItemReader, ItemWriter, and ItemProcessor implementations for various data sources.
+Infrastructure components providing ItemReader, ItemWriter, and ItemProcessor implementations for various data sources and destinations.
+
+- **Human URL:** [https://docs.spring.io/spring-batch/docs/current/reference/html/readersAndWriters.html](https://docs.spring.io/spring-batch/docs/current/reference/html/readersAndWriters.html)
+- **Base URL:** `https://github.com/spring-projects/spring-batch`
+
+#### Tags
+
+- Item Readers
+- Item Writers
+- JDBC
+- JPA
+
+#### Properties
 
 - [Documentation](https://docs.spring.io/spring-batch/docs/current/reference/html/readersAndWriters.html)
-
-## OpenAPI Specifications
-
-| API | File |
-|-----|------|
-| Spring Batch Actuator API | [openapi/spring-batch-openapi.yml](openapi/spring-batch-openapi.yml) |
-
-## Spectral Rules
-
-| Ruleset | File |
-|---------|------|
-| Spring Batch Rules | [rules/spring-batch-rules.yml](rules/spring-batch-rules.yml) |
-
-## Capabilities
-
-### Shared Definitions
-
-| API | File |
-|-----|------|
-| Spring Batch Actuator API | [capabilities/shared/spring-batch-actuator.yaml](capabilities/shared/spring-batch-actuator.yaml) |
-
-### Workflow Capabilities
-
-| Workflow | Description | File |
-|----------|-------------|------|
-| Batch Job Monitoring | Monitor Spring Batch job executions, metrics, and health | [capabilities/batch-job-monitoring.yaml](capabilities/batch-job-monitoring.yaml) |
-
-## JSON Schemas
-
-| Schema | File |
-|--------|------|
-| Job Execution | [json-schema/spring-batch-job-execution-schema.json](json-schema/spring-batch-job-execution-schema.json) |
-| Job Parameters | [json-schema/spring-batch-job-parameters-schema.json](json-schema/spring-batch-job-parameters-schema.json) |
-
-## JSON Structures
-
-| Structure | File |
-|-----------|------|
-| Job Execution Domain Model | [json-structure/spring-batch-job-execution-structure.json](json-structure/spring-batch-job-execution-structure.json) |
-
-## JSON-LD Contexts
-
-| Context | File |
-|---------|------|
-| Spring Batch | [json-ld/spring-batch-context.jsonld](json-ld/spring-batch-context.jsonld) |
-
-## Examples
-
-| Example | File |
-|---------|------|
-| Get Application Health | [examples/spring-batch-get-health-example.json](examples/spring-batch-get-health-example.json) |
-| List Job Executions | [examples/spring-batch-list-job-executions-example.json](examples/spring-batch-list-job-executions-example.json) |
-| Get Metric Value | [examples/spring-batch-get-metric-example.json](examples/spring-batch-get-metric-example.json) |
-
-## Vocabulary
-
-| Vocabulary | File |
-|------------|------|
-| Spring Batch Domain Terms | [vocabulary/spring-batch-vocabulary.yml](vocabulary/spring-batch-vocabulary.yml) |
+- [A P I  Documentation](https://docs.spring.io/spring-batch/docs/current/api/org/springframework/batch/item/package-summary.html)
+- [Postman Collection](collections/spring-batch.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/spring-batch.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
 ## Common Properties
 
@@ -98,11 +97,12 @@ ItemReader, ItemWriter, and ItemProcessor implementations for various data sourc
 - [Issues](https://github.com/spring-projects/spring-batch/issues)
 - [Roadmap](https://github.com/spring-projects/spring-batch/milestones)
 - [License](https://github.com/spring-projects/spring-batch/blob/main/LICENSE)
-- [Contributing Guidelines](https://github.com/spring-projects/spring-batch/blob/main/CONTRIBUTING.md)
-- [Maven Central](https://search.maven.org/search?q=g:org.springframework.batch)
+- [Contributing  Guidelines](https://github.com/spring-projects/spring-batch/blob/main/CONTRIBUTING.md)
+- [Maven  Central](https://search.maven.org/search?q=g:org.springframework.batch)
 - [Release Notes](https://github.com/spring-projects/spring-batch/releases)
-- [Security Policy](https://github.com/spring-projects/spring-batch/security/policy)
+- [Security  Policy](https://github.com/spring-projects/spring-batch/security/policy)
 
 ## Maintainers
 
-- Spring Team — spring-batch@pivotal.io
+**Email:** spring-batch@pivotal.io
+**URL:** https://spring.io/team
