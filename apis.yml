@@ -47,7 +47,7 @@ apis:
         url: https://github.com/spring-projects/spring-batch/tree/main/spring-batch-samples
       - type: OpenAPI
         url: openapi/spring-batch-openapi.yml
-      - type: Spectral Rules
+      - type: SpectralRules
         url: rules/spring-batch-rules.yml
   - name: Spring Batch Actuator API
     description: >-
