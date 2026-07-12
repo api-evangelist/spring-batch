@@ -89,6 +89,10 @@ include:
   - name: Spring Boot
     url: https://spring.io/projects/spring-boot
 common:
+  - type: VulnerabilityDisclosure
+    url: security/spring-batch-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/spring-batch-domain-security.yml
   - type: Blog
     url: https://spring.io/blog/category/spring-batch
   - type: StackOverflow
