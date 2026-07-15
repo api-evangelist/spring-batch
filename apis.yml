@@ -89,6 +89,8 @@ include:
   - name: Spring Boot
     url: https://spring.io/projects/spring-boot
 common:
+  - type: AgenticAccess
+    url: agentic-access/spring-batch-agentic-access.yml
   - type: VulnerabilityDisclosure
     url: security/spring-batch-vulnerability-disclosure.yml
   - type: DomainSecurity
