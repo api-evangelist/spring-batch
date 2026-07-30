@@ -5,6 +5,18 @@ description: >-
   records including logging/tracing, transaction management, job processing statistics, job restart, skip, and resource
   management. It supports reading and writing from flat files, XML, JSON, databases (JDBC, JPA, Hibernate), message
   queues, and more.
+accessModel:
+  pricing: freemium
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Freemium
+  confidence: medium
+  source:
+  - plans
+  generated: '2026-07-22'
+  method: derived
 image: https://spring.io/img/projects/spring-batch.svg
 created: 2024-01-15T00:00:00.000Z
 modified: '2026-05-19'
@@ -20,65 +32,111 @@ tags:
   - Job Scheduling
   - Spring Framework
 apis:
-  - name: Spring Batch Core API
-    description: >-
-      Core framework API for batch processing including job configuration, execution, step management, job repository,
-      and monitoring. Includes support for chunk-oriented processing with configurable readers, processors, and writers.
-    image: https://spring.io/img/projects/spring-batch.svg
-    humanURL: https://spring.io/projects/spring-batch
-    baseURL: https://github.com/spring-projects/spring-batch
-    tags:
-      - Batch Jobs
-      - Chunk Processing
-      - Job Repository
-      - Step Execution
-    properties:
-      - type: Documentation
-        url: https://docs.spring.io/spring-batch/docs/current/reference/html/
-      - type: API Documentation
-        url: https://docs.spring.io/spring-batch/docs/current/api/
-      - type: GitHubRepository
-        url: https://github.com/spring-projects/spring-batch
-      - type: Getting Started Guide
-        url: https://spring.io/guides/gs/batch-processing/
-      - type: Reference Guide
-        url: https://docs.spring.io/spring-batch/docs/current/reference/html/index-single.html
-      - type: Samples
-        url: https://github.com/spring-projects/spring-batch/tree/main/spring-batch-samples
-      - type: OpenAPI
-        url: openapi/spring-batch-openapi.yml
-      - type: SpectralRules
-        url: rules/spring-batch-rules.yml
-  - name: Spring Batch Actuator API
-    description: >-
-      Spring Boot Actuator-based REST endpoints for monitoring Spring Batch applications. Provides health indicators,
-      Micrometer metrics, and job execution visibility.
-    humanURL: https://docs.spring.io/spring-batch/docs/current/reference/html/monitoring-and-metrics.html
-    baseURL: http://localhost:8080/actuator
-    tags:
-      - Actuator
-      - Health
-      - Metrics
-      - Monitoring
-    properties:
-      - type: Documentation
-        url: https://docs.spring.io/spring-batch/docs/current/reference/html/monitoring-and-metrics.html
-  - name: Spring Batch Infrastructure API
-    description: >-
-      Infrastructure components providing ItemReader, ItemWriter, and ItemProcessor implementations for various data
-      sources and destinations.
-    humanURL: https://docs.spring.io/spring-batch/docs/current/reference/html/readersAndWriters.html
-    baseURL: https://github.com/spring-projects/spring-batch
-    tags:
-      - Item Readers
-      - Item Writers
-      - JDBC
-      - JPA
-    properties:
-      - type: Documentation
-        url: https://docs.spring.io/spring-batch/docs/current/reference/html/readersAndWriters.html
-      - type: API Documentation
-        url: https://docs.spring.io/spring-batch/docs/current/api/org/springframework/batch/item/package-summary.html
+- name: Spring Batch Actuator API
+  description: >-
+    Spring Boot Actuator-based REST endpoints for monitoring Spring Batch applications. Provides health
+    indicators, Micrometer metrics, and job execution visibility.
+  humanURL: >-
+    https://docs.spring.io/spring-batch/docs/current/reference/html/monitoring-and-metrics.html
+  baseURL: http://localhost:8080/actuator
+  tags:
+  - Actuator
+  - Health
+  - Metrics
+  - Monitoring
+  properties:
+  - type: Documentation
+    url: >-
+      https://docs.spring.io/spring-batch/docs/current/reference/html/monitoring-and-metrics.html
+- name: Spring Batch Infrastructure API
+  description: >-
+    Infrastructure components providing ItemReader, ItemWriter, and ItemProcessor implementations for
+    various data sources and destinations.
+  humanURL: https://docs.spring.io/spring-batch/docs/current/reference/html/readersAndWriters.html
+  baseURL: https://github.com/spring-projects/spring-batch
+  tags:
+  - Item Readers
+  - Item Writers
+  - JDBC
+  - JPA
+  properties:
+  - type: Documentation
+    url: https://docs.spring.io/spring-batch/docs/current/reference/html/readersAndWriters.html
+  - type: API Documentation
+    url: >-
+      https://docs.spring.io/spring-batch/docs/current/api/org/springframework/batch/item/package-summary.html
+- aid: spring-batch:spring-batch-batch-jobs-api
+  name: Spring Batch Batch Jobs API
+  description: Batch job execution management and monitoring
+  humanURL: https://spring.io/projects/spring-batch
+  baseURL: https://github.com/spring-projects/spring-batch
+  tags:
+  - Batch Jobs
+  properties:
+  - type: OpenAPI
+    url: openapi/spring-batch-batch-jobs-api-openapi.yml
+  - type: Documentation
+    url: https://docs.spring.io/spring-batch/docs/current/reference/html/
+  - type: API Documentation
+    url: https://docs.spring.io/spring-batch/docs/current/api/
+  - type: GitHubRepository
+    url: https://github.com/spring-projects/spring-batch
+  - type: Getting Started Guide
+    url: https://spring.io/guides/gs/batch-processing/
+  - type: Reference Guide
+    url: https://docs.spring.io/spring-batch/docs/current/reference/html/index-single.html
+  - type: Samples
+    url: https://github.com/spring-projects/spring-batch/tree/main/spring-batch-samples
+  - type: SpectralRules
+    url: rules/spring-batch-rules.yml
+- aid: spring-batch:spring-batch-health-api
+  name: Spring Batch Health API
+  description: Application and component health checks
+  humanURL: https://spring.io/projects/spring-batch
+  baseURL: https://github.com/spring-projects/spring-batch
+  tags:
+  - Health
+  properties:
+  - type: OpenAPI
+    url: openapi/spring-batch-health-api-openapi.yml
+  - type: Documentation
+    url: https://docs.spring.io/spring-batch/docs/current/reference/html/
+  - type: API Documentation
+    url: https://docs.spring.io/spring-batch/docs/current/api/
+  - type: GitHubRepository
+    url: https://github.com/spring-projects/spring-batch
+  - type: Getting Started Guide
+    url: https://spring.io/guides/gs/batch-processing/
+  - type: Reference Guide
+    url: https://docs.spring.io/spring-batch/docs/current/reference/html/index-single.html
+  - type: Samples
+    url: https://github.com/spring-projects/spring-batch/tree/main/spring-batch-samples
+  - type: SpectralRules
+    url: rules/spring-batch-rules.yml
+- aid: spring-batch:spring-batch-metrics-api
+  name: Spring Batch Metrics API
+  description: Micrometer-based application metrics
+  humanURL: https://spring.io/projects/spring-batch
+  baseURL: https://github.com/spring-projects/spring-batch
+  tags:
+  - Metrics
+  properties:
+  - type: OpenAPI
+    url: openapi/spring-batch-metrics-api-openapi.yml
+  - type: Documentation
+    url: https://docs.spring.io/spring-batch/docs/current/reference/html/
+  - type: API Documentation
+    url: https://docs.spring.io/spring-batch/docs/current/api/
+  - type: GitHubRepository
+    url: https://github.com/spring-projects/spring-batch
+  - type: Getting Started Guide
+    url: https://spring.io/guides/gs/batch-processing/
+  - type: Reference Guide
+    url: https://docs.spring.io/spring-batch/docs/current/reference/html/index-single.html
+  - type: Samples
+    url: https://github.com/spring-projects/spring-batch/tree/main/spring-batch-samples
+  - type: SpectralRules
+    url: rules/spring-batch-rules.yml
 maintainers:
   - name: Spring Team
     email: spring-batch@pivotal.io
