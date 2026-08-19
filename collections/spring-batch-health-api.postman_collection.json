@@ -1,0 +1,209 @@
+{
+  "item": [
+    {
+      "id": "e743f277-a2be-427f-823c-da587b2399b4",
+      "name": "Health",
+      "description": {
+        "content": "Application and component health checks",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "3030ce30-8421-4119-b491-ff4331ba30f4",
+          "name": "Get Application Health",
+          "request": {
+            "name": "Get Application Health",
+            "description": {
+              "content": "Returns the health status of the Spring Batch application including database connectivity and batch job health indicators.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "health"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "23f1426b-e323-4f23-ab32-308729209778",
+              "name": "Application is healthy",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "health"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"status\": \"DOWN\",\n  \"components\": {\n    \"key_0\": {\n      \"status\": \"UNKNOWN\",\n      \"details\": {\n        \"key_0\": 142,\n        \"key_1\": \"string\",\n        \"key_2\": \"string\"\n      }\n    }\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "a9dd509c-0a12-4666-9b20-5ce00da96a1f",
+              "name": "Application is unhealthy",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "health"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Service Unavailable",
+              "code": 503,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"status\": \"DOWN\",\n  \"components\": {\n    \"key_0\": {\n      \"status\": \"UNKNOWN\",\n      \"details\": {\n        \"key_0\": 142,\n        \"key_1\": \"string\",\n        \"key_2\": \"string\"\n      }\n    }\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "64c5acfd-e0ec-4f66-8e89-51b6b036be5a",
+          "name": "Get Batch Health",
+          "request": {
+            "name": "Get Batch Health",
+            "description": {
+              "content": "Returns health status specific to Spring Batch, including job repository connectivity and last job execution status.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "health",
+                "batch"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "ee628058-2697-417f-a839-4d7365cdaf50",
+              "name": "Batch subsystem is healthy",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "health",
+                    "batch"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"status\": \"UP\",\n  \"details\": {\n    \"key_0\": 1595.9982818765473,\n    \"key_1\": 7136\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "http://localhost:8080/actuator",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "dd1f0b48-55d9-4a66-b87e-ec78dd400e6b",
+    "name": "Spring Batch 5.1 Actuator Batch Jobs Health API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Spring Boot Actuator endpoints exposed by Spring Batch 5.1 applications for monitoring and managing batch jobs. Provides health checks, metrics, job execution status, and step execution details via the Spring Boot Actuator infrastructure. These endpoints are available when spring-boot-actuator is on the classpath alongside spring-batch-core.\n\nContact Support:\n Name: Spring Team",
+      "type": "text/plain"
+    }
+  }
+}

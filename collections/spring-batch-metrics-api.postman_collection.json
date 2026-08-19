@@ -1,0 +1,245 @@
+{
+  "item": [
+    {
+      "id": "72244ea0-8b90-4900-b8dc-fc4005bb9b49",
+      "name": "Metrics",
+      "description": {
+        "content": "Micrometer-based application metrics",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "0b5b9299-7f45-41be-892c-894233e5e18d",
+          "name": "List Available Metrics",
+          "request": {
+            "name": "List Available Metrics",
+            "description": {
+              "content": "Returns a list of all available metric names collected by Micrometer, including Spring Batch job and step metrics.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "metrics"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "020ad97f-b986-48b2-8b31-99a26db7d993",
+              "name": "List of available metrics",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "metrics"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"names\": [\n    \"spring.batch.job.duration\",\n    \"spring.batch.step.duration\",\n    \"spring.batch.chunk.size\",\n    \"spring.batch.item.read\",\n    \"spring.batch.item.write\"\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "604c9137-d6d1-44fe-acbd-8e3b092d8fc4",
+          "name": "Get Metric Value",
+          "request": {
+            "name": "Get Metric Value",
+            "description": {
+              "content": "Returns measurements for a specific metric. Spring Batch 5.1 exposes metrics under the spring.batch namespace including job duration, step duration, read count, write count, and skip count.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "metrics",
+                ":metricName"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "tag",
+                  "value": "<string>",
+                  "description": "Tag filter in the form name:value (can be repeated)"
+                }
+              ],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "metricName",
+                  "description": "(Required) Name of the metric (e.g., spring.batch.job.duration, spring.batch.step.duration, spring.batch.chunk.size)"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "dc697a5e-0b63-46ff-849c-6aa71b96fcf4",
+              "name": "Metric measurements",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "metrics",
+                    ":metricName"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "tag",
+                      "value": "job.name:importUserJob"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "metricName",
+                      "description": "(Required) Name of the metric (e.g., spring.batch.job.duration, spring.batch.step.duration, spring.batch.chunk.size)"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"name\": \"string\",\n  \"description\": \"string\",\n  \"baseUnit\": \"string\",\n  \"measurements\": [\n    {\n      \"statistic\": \"string\",\n      \"value\": 3432.002881911339\n    },\n    {\n      \"statistic\": \"string\",\n      \"value\": 9661.52936665701\n    }\n  ],\n  \"availableTags\": [\n    {\n      \"tag\": \"string\",\n      \"values\": [\n        \"string\",\n        \"string\"\n      ]\n    },\n    {\n      \"tag\": \"string\",\n      \"values\": [\n        \"string\",\n        \"string\"\n      ]\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "23093bd6-06b9-4a5a-8f0e-604084ae727b",
+              "name": "Metric not found",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "metrics",
+                    ":metricName"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "tag",
+                      "value": "job.name:importUserJob"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "metricName",
+                      "description": "(Required) Name of the metric (e.g., spring.batch.job.duration, spring.batch.step.duration, spring.batch.chunk.size)"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "http://localhost:8080/actuator",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "490b7d2e-1e6b-470d-9ce2-e9e6ae182767",
+    "name": "Spring Batch 5.1 Actuator Batch Jobs Metrics API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Spring Boot Actuator endpoints exposed by Spring Batch 5.1 applications for monitoring and managing batch jobs. Provides health checks, metrics, job execution status, and step execution details via the Spring Boot Actuator infrastructure. These endpoints are available when spring-boot-actuator is on the classpath alongside spring-batch-core.\n\nContact Support:\n Name: Spring Team",
+      "type": "text/plain"
+    }
+  }
+}
