@@ -20,7 +20,7 @@ accessModel:
 image: https://spring.io/img/projects/spring-batch.svg
 created: 2024-01-15T00:00:00.000Z
 modified: '2026-05-19'
-specificationVersion: '0.18'
+specificationVersion: '0.23'
 url: https://spring.io/projects/spring-batch
 kind: opensource
 tags:
