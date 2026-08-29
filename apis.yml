@@ -5,6 +5,18 @@ description: >-
   records including logging/tracing, transaction management, job processing statistics, job restart, skip, and resource
   management. It supports reading and writing from flat files, XML, JSON, databases (JDBC, JPA, Hibernate), message
   queues, and more.
+deliveryModel:
+  model: unknown
+  open_source: unknown
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - openapi
+  - repository-unlicensed
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: unknown
@@ -147,6 +159,10 @@ include:
   - name: Spring Boot
     url: https://spring.io/projects/spring-boot
 common:
+  - type: CodeOfConduct
+    url: https://github.com/spring-projects/.github/blob/main/CODE_OF_CONDUCT.md
+  - type: ContributionGuide
+    url: https://github.com/spring-projects/spring-batch/blob/main/CONTRIBUTING.md
   - type: AgenticAccess
     url: agentic-access/spring-batch-agentic-access.yml
   - type: VulnerabilityDisclosure
