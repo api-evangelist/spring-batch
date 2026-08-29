@@ -97,7 +97,7 @@ apis:
     url: https://spring.io/guides/gs/batch-processing/
   - type: Reference Guide
     url: https://docs.spring.io/spring-batch/docs/current/reference/html/index-single.html
-  - type: Samples
+  - type: Examples
     url: https://github.com/spring-projects/spring-batch/tree/main/spring-batch-samples
   - type: SpectralRules
     url: rules/spring-batch-rules.yml
@@ -121,7 +121,7 @@ apis:
     url: https://spring.io/guides/gs/batch-processing/
   - type: Reference Guide
     url: https://docs.spring.io/spring-batch/docs/current/reference/html/index-single.html
-  - type: Samples
+  - type: Examples
     url: https://github.com/spring-projects/spring-batch/tree/main/spring-batch-samples
   - type: SpectralRules
     url: rules/spring-batch-rules.yml
@@ -145,7 +145,7 @@ apis:
     url: https://spring.io/guides/gs/batch-processing/
   - type: Reference Guide
     url: https://docs.spring.io/spring-batch/docs/current/reference/html/index-single.html
-  - type: Samples
+  - type: Examples
     url: https://github.com/spring-projects/spring-batch/tree/main/spring-batch-samples
   - type: SpectralRules
     url: rules/spring-batch-rules.yml
