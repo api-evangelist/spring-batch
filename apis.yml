@@ -49,6 +49,11 @@ apis:
   humanURL: https://docs.spring.io/spring-batch/docs/current/reference/html/monitoring-and-metrics.html
   baseURL: http://localhost:8080/actuator
   tags:
+  - Actuators
+  - Health
+  - Metrics
+  - Monitoring
+  tags_raw:
   - Actuator
   - Health
   - Metrics
