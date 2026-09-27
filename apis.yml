@@ -5,16 +5,21 @@ description: A lightweight, comprehensive batch framework designed to enable the
   job processing statistics, job restart, skip, and resource management. It supports reading and writing
   from flat files, XML, JSON, databases (JDBC, JPA, Hibernate), message queues, and more.
 deliveryModel:
-  model: unknown
-  open_source: unknown
+  model: self-hosted
+  license: Apache-2.0
+  license_evidence:
+    repo: spring-projects/spring-batch
+    spdx: Apache-2.0
+    stars: 2960
+  open_source: true
   commercial: false
   callable_host: false
-  label: Delivery model not determined — needs a product licence on record
-  confidence: low
+  label: Self-hosted open source · you run it yourself
+  confidence: medium
   source:
   - openapi
-  - repository-unlicensed
-  generated: '2026-08-28'
+  - repository-license
+  generated: '2026-09-25'
   method: derived
 accessModel:
   pricing: freemium
