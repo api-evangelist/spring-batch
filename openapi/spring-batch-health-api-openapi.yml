@@ -52,22 +52,6 @@ paths:
                 $ref: '#/components/schemas/ComponentHealth'
 components:
   schemas:
-    ComponentHealth:
-      type: object
-      description: Health status of a single component
-      properties:
-        status:
-          type: string
-          description: Component health status
-          enum:
-          - UP
-          - DOWN
-          - OUT_OF_SERVICE
-          - UNKNOWN
-        details:
-          type: object
-          description: Additional details about the component health
-          additionalProperties: true
     HealthResponse:
       type: object
       description: Overall application health status
@@ -85,3 +69,19 @@ components:
           description: Health of individual components
           additionalProperties:
             $ref: '#/components/schemas/ComponentHealth'
+    ComponentHealth:
+      type: object
+      description: Health status of a single component
+      properties:
+        status:
+          type: string
+          description: Component health status
+          enum:
+          - UP
+          - DOWN
+          - OUT_OF_SERVICE
+          - UNKNOWN
+        details:
+          type: object
+          description: Additional details about the component health
+          additionalProperties: true
