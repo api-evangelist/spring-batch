@@ -163,6 +163,9 @@ include:
 - name: Spring Boot
   url: https://spring.io/projects/spring-boot
 common:
+- type: CapabilityMap
+  url: capabilities/spring-batch-capability-edges.yml
+  name: Spring Batch Business Capability Map
 - type: Website
   url: https://spring.io
 - type: CodeOfConduct
