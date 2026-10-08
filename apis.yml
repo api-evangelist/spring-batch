@@ -163,6 +163,12 @@ include:
 - name: Spring Boot
   url: https://spring.io/projects/spring-boot
 common:
+- type: Plans
+  url: plans/spring-batch-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/spring-batch-rate-limits.yml
+- type: FinOps
+  url: finops/spring-batch-finops.yml
 - type: CapabilityMap
   url: capabilities/spring-batch-capability-edges.yml
   name: Spring Batch Business Capability Map
