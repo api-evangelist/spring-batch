@@ -63,6 +63,21 @@ paths:
           description: Metric not found
 components:
   schemas:
+    MetricsList:
+      type: object
+      description: List of available metric names
+      properties:
+        names:
+          type: array
+          description: Available metric names
+          items:
+            type: string
+          example:
+          - spring.batch.job.duration
+          - spring.batch.step.duration
+          - spring.batch.chunk.size
+          - spring.batch.item.read
+          - spring.batch.item.write
     MetricDetail:
       type: object
       description: Detail for a specific metric
@@ -100,18 +115,3 @@ components:
                 type: array
                 items:
                   type: string
-    MetricsList:
-      type: object
-      description: List of available metric names
-      properties:
-        names:
-          type: array
-          description: Available metric names
-          items:
-            type: string
-          example:
-          - spring.batch.job.duration
-          - spring.batch.step.duration
-          - spring.batch.chunk.size
-          - spring.batch.item.read
-          - spring.batch.item.write
