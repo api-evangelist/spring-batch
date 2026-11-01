@@ -1,4 +1,4 @@
-# Spring Batch (spring-batch)
+# Spring Batch
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,107 +66,160 @@
 
 A lightweight, comprehensive batch framework designed to enable the development of robust batch applications vital for the daily operations of enterprise systems. Spring Batch provides reusable functions for processing large volumes of records including logging/tracing, transaction management, job processing statistics, job restart, skip, and resource management. It supports reading and writing from flat files, XML, JSON, databases (JDBC, JPA, Hibernate), message queues, and more.
 
-**APIs.json:** [https://spring.io/projects/spring-batch](https://spring.io/projects/spring-batch)
+**Areas:** Batch Processing · Data Processing · Enterprise · ETL · Java · Job Scheduling · Spring Framework
 
-## Tags
+## Spring Batch on APIs.io
 
-- Batch Processing
-- Data Processing
-- Enterprise
-- ETL
-- Java
-- Job Scheduling
-- Spring Framework
+Everything profiled for Spring Batch is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/spring-batch/](https://apis.io/providers/spring-batch/)** — or go straight to one of the APIs or properties below.
 
-## Timestamps
+### APIs (5)
 
-- **Created:** Sun Jan 14 2024 19:00:00 GMT-0500 (Eastern Standard Time)
-- **Modified:** 2026-05-19
+- [Spring Batch Actuator API](https://apis.io/apis/spring-batch/spring-batch-actuator-api/) — Spring Boot Actuator-based REST endpoints for monitoring Spring Batch applications. Provides health indicators, Micrometer metrics, and job execution…
+- [Spring Batch Infrastructure API](https://apis.io/apis/spring-batch/spring-batch-infrastructure-api/) — Infrastructure components providing ItemReader, ItemWriter, and ItemProcessor implementations for various data sources and destinations.
+- [Spring Batch Jobs API](https://apis.io/apis/spring-batch/spring-batch-batch-jobs-api/) — Batch job execution management and monitoring
+- [Spring Batch Health API](https://apis.io/apis/spring-batch/spring-batch-health-api/) — Application and component health checks
+- [Spring Batch Metrics API](https://apis.io/apis/spring-batch/spring-batch-metrics-api/) — Micrometer-based application metrics
 
-## APIs
+### Published properties
 
-### Spring Batch Core API
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-Core framework API for batch processing including job configuration, execution, step management, job repository, and monitoring. Includes support for chunk-oriented processing with configurable readers, processors, and writers.
+#### Agentic access (1)
 
-- **Human URL:** [https://spring.io/projects/spring-batch](https://spring.io/projects/spring-batch)
-- **Base URL:** `https://github.com/spring-projects/spring-batch`
+Which operations an agent can call, which act, and which need a human in the loop.
 
-#### Tags
+- [Spring Batch Agentic Access](https://apis.io/agentic-access/spring-batch/spring-batch-agentic-access/)
 
-- Batch Jobs
-- Chunk Processing
-- Job Repository
-- Step Execution
+#### JSON Schema (2)
 
-#### Properties
+The data models the API reads and writes.
 
-- [Documentation](https://docs.spring.io/spring-batch/docs/current/reference/html/)
-- [A P I  Documentation](https://docs.spring.io/spring-batch/docs/current/api/)
-- [GitHub Repository](https://github.com/spring-projects/spring-batch)
-- [Getting  Started  Guide](https://spring.io/guides/gs/batch-processing/)
-- [Reference  Guide](https://docs.spring.io/spring-batch/docs/current/reference/html/index-single.html)
-- [Samples](https://github.com/spring-projects/spring-batch/tree/main/spring-batch-samples)
-- [OpenAPI](openapi/spring-batch-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/spring-batch.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/spring-batch.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-- [Spectral  Rules](rules/spring-batch-rules.yml)
+- [Spring Batch Job Execution](https://apis.io/schemas/spring-batch/spring-batch-job-execution/)
+- [Spring Batch Job Parameters](https://apis.io/schemas/spring-batch/spring-batch-job-parameters/)
 
-### Spring Batch Actuator API
+#### JSON Structure (1)
 
-Spring Boot Actuator-based REST endpoints for monitoring Spring Batch applications. Provides health indicators, Micrometer metrics, and job execution visibility.
+Data models expressed in JSON Structure.
 
-- **Human URL:** [https://docs.spring.io/spring-batch/docs/current/reference/html/monitoring-and-metrics.html](https://docs.spring.io/spring-batch/docs/current/reference/html/monitoring-and-metrics.html)
-- **Base URL:** `http://localhost:8080/actuator`
+- [Spring Batch Job Execution Structure](https://apis.io/json-structure/spring-batch/spring-batch-job-execution-structure/)
 
-#### Tags
+#### JSON-LD (1)
 
-- Actuator
-- Health
-- Metrics
-- Monitoring
+Linked-data contexts for the provider's vocabulary.
 
-#### Properties
+- [Spring Batch Context](https://apis.io/jsonld/spring-batch/spring-batch-context/)
 
-- [Documentation](https://docs.spring.io/spring-batch/docs/current/reference/html/monitoring-and-metrics.html)
-- [Postman Collection](collections/spring-batch.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/spring-batch.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+#### Vocabulary (1)
 
-### Spring Batch Infrastructure API
+The provider's domain terms, defined.
 
-Infrastructure components providing ItemReader, ItemWriter, and ItemProcessor implementations for various data sources and destinations.
+- [Spring Batch 5.1 Vocabulary](https://apis.io/vocabularies/spring-batch/spring-batch-vocabulary/)
 
-- **Human URL:** [https://docs.spring.io/spring-batch/docs/current/reference/html/readersAndWriters.html](https://docs.spring.io/spring-batch/docs/current/reference/html/readersAndWriters.html)
-- **Base URL:** `https://github.com/spring-projects/spring-batch`
+#### Examples (3)
 
-#### Tags
+Example requests and responses.
 
-- Item Readers
-- Item Writers
-- JDBC
-- JPA
+- [Spring Batch Get Health Example](https://apis.io/examples/spring-batch/spring-batch-get-health-example/)
+- [Spring Batch Get Metric Example](https://apis.io/examples/spring-batch/spring-batch-get-metric-example/)
+- [Spring Batch List Job Executions Example](https://apis.io/examples/spring-batch/spring-batch-list-job-executions-example/)
 
-#### Properties
+#### Collections (4)
 
-- [Documentation](https://docs.spring.io/spring-batch/docs/current/reference/html/readersAndWriters.html)
-- [A P I  Documentation](https://docs.spring.io/spring-batch/docs/current/api/org/springframework/batch/item/package-summary.html)
-- [Postman Collection](collections/spring-batch.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/spring-batch.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Postman and Open Collection request collections.
 
-## Common Properties
+- [Spring Batch 5.1 Actuator API](https://apis.io/collections/spring-batch/open-spring-batch/)
+- [Spring Batch 5.1 Actuator Batch Jobs API](https://apis.io/collections/spring-batch/open-spring-batch-batch-jobs-api/)
+- [Spring Batch 5.1 Actuator Batch Jobs Health API](https://apis.io/collections/spring-batch/open-spring-batch-health-api/)
+- [Spring Batch 5.1 Actuator Batch Jobs Metrics API](https://apis.io/collections/spring-batch/open-spring-batch-metrics-api/)
 
+#### Governance rules (2)
+
+Spectral rulesets for the provider's contracts.
+
+- [Spring Batch — jsonschema rules](https://apis.io/rules/spring-batch/spring-batch-jsonschema-spectral-rules/)
+- [Spring Batch API Rules](https://apis.io/rules/spring-batch/spring-batch-rules/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Spring Batch Domain Security](https://apis.io/security/spring-batch/spring-batch-domain-security/)
+- [Spring Batch Vulnerability Disclosure](https://apis.io/security/spring-batch/spring-batch-vulnerability-disclosure/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Spring Batch Plans Pricing](https://apis.io/plans/spring-batch/spring-batch-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Spring Batch Rate Limits](https://apis.io/rate-limits/spring-batch/spring-batch-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Spring Batch Finops](https://apis.io/finops/spring-batch/spring-batch-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://spring.io)
 - [Blog](https://spring.io/blog/category/spring-batch)
-- [Stack Overflow](https://stackoverflow.com/questions/tagged/spring-batch)
-- [Chat](https://gitter.im/spring-projects/spring-batch)
-- [Issues](https://github.com/spring-projects/spring-batch/issues)
-- [Roadmap](https://github.com/spring-projects/spring-batch/milestones)
-- [License](https://github.com/spring-projects/spring-batch/blob/main/LICENSE)
-- [Contributing  Guidelines](https://github.com/spring-projects/spring-batch/blob/main/CONTRIBUTING.md)
-- [Maven  Central](https://search.maven.org/search?q=g:org.springframework.batch)
-- [Release Notes](https://github.com/spring-projects/spring-batch/releases)
-- [Security  Policy](https://github.com/spring-projects/spring-batch/security/policy)
 
-## Maintainers
+## API Evangelist rating
 
-**Email:** spring-batch@pivotal.io
-**URL:** https://spring.io/team
+**Kin Score 35.4** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 64.3 |
+| Contract quality | 52.0 |
+| Contract governance | 13.6 |
+| Operational transparency | 44.7 |
+| Developer ergonomics | 16.7 |
+| Access clarity | 7.9 |
+
+**Agent readiness 19.3** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | na |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | na |
+| Error Semantics | — |
+| OpenAPI Examples | documented (partial credit) |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | na |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 16.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/spring-batch/](https://apis.io/providers/spring-batch/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Spring Batch: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/spring-batch/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
